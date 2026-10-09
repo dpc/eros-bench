@@ -1,0 +1,450 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain1)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain5)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain6)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain2)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain4)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain0)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain7)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain3)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 5.68s
+     Removed 109 files, 28.0MiB total
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain0)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain2)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain1)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain5)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain7)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain4)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain6)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain3)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.70s
+     Removed 109 files, 43.8MiB total
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain1)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain5)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain7)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain0)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain2)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain4)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain6)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain3)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.25s
+     Removed 109 files, 43.9MiB total
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain2)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain7)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain6)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain4)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain1)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain3)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain0)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain5)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.09s
+     Removed 109 files, 31.5MiB total
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain7)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain4)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain1)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain6)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain0)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain3)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain5)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain2)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.26s
+     Removed 109 files, 47.1MiB total
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain5)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain6)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain0)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain2)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain1)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain7)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain3)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain4)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.17s
+     Removed 109 files, 47.2MiB total
+     Removed 109 files, 28.0MiB total
+     Removed 109 files, 43.8MiB total
+     Removed 109 files, 43.9MiB total
+     Removed 109 files, 31.5MiB total
+     Removed 109 files, 47.1MiB total
+     Removed 109 files, 47.2MiB total
+     Removed 109 files, 43.8MiB total
+     Removed 109 files, 43.9MiB total
+     Removed 109 files, 31.5MiB total
+     Removed 109 files, 47.1MiB total
+     Removed 109 files, 47.2MiB total
+     Removed 109 files, 28.0MiB total
+     Removed 109 files, 43.9MiB total
+     Removed 109 files, 31.5MiB total
+     Removed 109 files, 47.1MiB total
+     Removed 109 files, 47.2MiB total
+     Removed 109 files, 28.0MiB total
+     Removed 109 files, 43.8MiB total
+     Removed 109 files, 31.5MiB total
+     Removed 109 files, 47.1MiB total
+     Removed 109 files, 47.2MiB total
+     Removed 109 files, 28.0MiB total
+     Removed 109 files, 43.8MiB total
+     Removed 109 files, 43.9MiB total
+     Removed 109 files, 47.1MiB total
+     Removed 109 files, 47.2MiB total
+     Removed 109 files, 28.0MiB total
+     Removed 109 files, 43.8MiB total
+     Removed 109 files, 43.9MiB total
+     Removed 109 files, 31.5MiB total
+     Removed 109 files, 47.2MiB total
+     Removed 109 files, 28.0MiB total
+     Removed 109 files, 43.8MiB total
+     Removed 109 files, 43.9MiB total
+     Removed 109 files, 31.5MiB total
+     Removed 109 files, 47.1MiB total
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain3)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain6)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain7)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain0)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain2)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain4)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain5)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain1)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.70s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain7)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain2)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain3)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain4)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain5)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain1)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain6)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain0)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.75s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain7)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain4)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain1)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain3)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain2)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain5)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain6)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain0)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 5.24s
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain0)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain4)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain7)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain1)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain6)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain2)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain3)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain5)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.23s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain5)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain6)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain7)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain1)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain0)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain2)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain3)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain4)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.82s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain2)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain6)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain0)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain3)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain4)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain7)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain5)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain1)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.11s
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain3)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain1)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain0)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain2)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain5)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain7)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain4)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain6)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.58s
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain0)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain2)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain6)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain4)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain3)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain1)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain5)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain7)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.82s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain2)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain6)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain3)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain5)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain0)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain4)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain7)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain1)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.85s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain2)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain4)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain7)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain1)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain6)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain0)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain3)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain5)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.67s
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain7)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain3)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain4)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain5)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain6)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain1)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain0)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain2)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.98s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain1)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain2)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain6)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain7)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain0)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain3)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain5)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain4)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.86s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain6)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain1)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain2)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain7)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain5)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain0)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain3)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/domain4)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-none/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.48s
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain2)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain3)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain6)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain4)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain1)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain7)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain5)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/domain0)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-macro/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.72s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain0)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain4)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain2)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain5)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain6)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain7)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain1)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain3)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.65s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain7)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain0)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain2)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain6)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain5)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain4)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain3)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain1)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.56s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain4)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain1)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain3)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain6)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain7)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain2)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain0)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/domain5)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-macro/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.83s
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain4)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain1)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain7)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain2)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain6)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain5)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain0)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/domain3)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-manual/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.74s

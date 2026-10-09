@@ -9,20 +9,20 @@ from pathlib import Path
 import bench
 
 
-def analyze(output):
+def analyze(output, experiment=bench.PRIMARY):
     rows = [
         json.loads(line) for line in (output / "sizes.jsonl").read_text().splitlines()
     ]
     analysis = {}
-    for variant in bench.VARIANTS:
+    for variant in experiment.variants:
         row = next(
             row
             for row in reversed(rows)
             if row["variant"] == variant and row["profile"] == "release"
         )
         binary = (
-            bench.ROOT
-            / "targets/measure/build-release-cold-target"
+            experiment.targets
+            / "measure/build-release-cold-target"
             / variant
             / "release/app"
         )
@@ -66,6 +66,12 @@ def analyze(output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument(
+        "--experiment", choices=["primary", "context"], default="primary"
+    )
     args = parser.parse_args()
     with bench.exclusive():
-        analyze(args.output.resolve())
+        analyze(
+            args.output.resolve(),
+            bench.CONTEXT if args.experiment == "context" else bench.PRIMARY,
+        )

@@ -1,0 +1,20 @@
+test_command_directory_ignores_callers_cargo_config (test_bench.HarnessTests.test_command_directory_ignores_callers_cargo_config) ... ok
+test_deterministic_generation_and_shape (test_bench.HarnessTests.test_deterministic_generation_and_shape) ... ok
+test_mutation_roundtrip (test_bench.HarnessTests.test_mutation_roundtrip) ... ok
+test_oracle_failure_categories (test_bench.HarnessTests.test_oracle_failure_categories) ... ok
+test_precise_sets (test_bench.HarnessTests.test_precise_sets) ... ok
+test_rebuild_audit_rejects_dependency_build (test_bench.HarnessTests.test_rebuild_audit_rejects_dependency_build) ... ok
+test_size_guard (test_bench.HarnessTests.test_size_guard) ... ok
+test_summary_rejects_failure (test_bench.HarnessTests.test_summary_rejects_failure) ... ok
+test_summary_rejects_interrupted_or_duplicate_cells (test_bench.HarnessTests.test_summary_rejects_interrupted_or_duplicate_cells) ... ok
+test_balanced_plan (test_context.ContextTests.test_balanced_plan) ... ok
+test_context_summary_rejects_incomplete_six_variants (test_context.ContextTests.test_context_summary_rejects_incomplete_six_variants) ... ok
+test_determinism_and_matched_sources (test_context.ContextTests.test_determinism_and_matched_sources) ... ok
+test_paths_are_disjoint (test_context.ContextTests.test_paths_are_disjoint) ... ok
+test_published_primary_hashes_unchanged (test_context.ContextTests.test_published_primary_hashes_unchanged) ... ok
+test_representative_pinned_expansion (test_context.ContextTests.test_representative_pinned_expansion) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.617s
+
+OK

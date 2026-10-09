@@ -10,6 +10,16 @@ on an AMD Ryzen 9 7950X3D, with **Rust 1.98.1**, Cargo 1.98.0, and **8 Cargo job
 Sources, dependency locks, toolchain environment, raw observations, rebuild
 audits, and behavioral validation are preserved or reproducible.
 
+**Separate context-macro experiment:** with 1,800 lazy `#[eros::context]`
+sites, leaf-edit checks added about **98–99 ms** (+54–57%), shared-body edits
+added **116–121 ms** (+49–50%), and stripped release binaries grew **47%**.
+A structurally matching handwritten control showed a **70–71 ms** leaf-edit
+difference between attributes and manual expansion—not an exact macro CPU-time
+measurement. No-op checks stayed
+around 24 ms. See [the six-variant context comparison](CONTEXT.md) for fresh
+matched controls, ranges, build results, and reproduction. **Runtime overhead
+was not measured.** The original results below are unchanged.
+
 ## Results
 
 **The largest check difference appeared in fresh-target checks, not ordinary edits.**

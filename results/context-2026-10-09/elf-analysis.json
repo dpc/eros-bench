@@ -1,0 +1,386 @@
+{
+  "erased-none": {
+    "sha256": "cb0f32a59f54e1f42a3ecc0d261d8c5e24f9a017eef8ba09d929fe245e3b0e68",
+    "commands": [
+      [
+        "size",
+        "-A",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-none/release/app"
+      ],
+      [
+        "readelf",
+        "-rW",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-none/release/app"
+      ],
+      [
+        "nm",
+        "-S",
+        "-C",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-none/release/app"
+      ]
+    ],
+    "section_bytes": {
+      ".interp": 83,
+      ".hash": 828,
+      ".gnu.hash": 36,
+      ".dynsym": 1728,
+      ".dynstr": 1295,
+      ".gnu.version": 144,
+      ".gnu.version_r": 304,
+      ".rela.dyn": 55104,
+      ".rela.plt": 48,
+      ".init": 27,
+      ".plt": 48,
+      ".plt.got": 8,
+      ".text": 1545813,
+      ".fini": 13,
+      ".rodata": 37356,
+      ".eh_frame_hdr": 11740,
+      ".eh_frame": 66992,
+      ".gcc_except_table": 29856,
+      ".note.gnu.property": 32,
+      ".note.ABI-tag": 32,
+      ".tdata": 48,
+      ".tbss": 32,
+      ".init_array": 16,
+      ".fini_array": 8,
+      ".data.rel.ro": 29064,
+      ".dynamic": 560,
+      ".got": 2368,
+      ".data": 2496,
+      ".bss": 192,
+      ".comment": 92
+    },
+    "relocation_counts": {
+      "R_X86_64_GLOB_DAT": 69,
+      "R_X86_64_JUMP_SLOT": 2,
+      "R_X86_64_RELATIVE": 2227
+    },
+    "adapter_symbol_pattern": " as eros::error_union::SendSyncError>::as_any",
+    "adapter_symbol_count": 64,
+    "domain5_error0_adapter_definitions": [
+      "0000000000081120 000000000000000b T <domain5::errors::Error0 as eros::error_union::SendSyncError>::as_any"
+    ],
+    "size_A_stdout": "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-none/release/app  :\nsection                 size      addr\n.interp                   83       848\n.hash                    828       936\n.gnu.hash                 36      1768\n.dynsym                 1728      1808\n.dynstr                 1295      3536\n.gnu.version             144      4832\n.gnu.version_r           304      4976\n.rela.dyn              55104      5280\n.rela.plt                 48     60384\n.init                     27     61440\n.plt                      48     61472\n.plt.got                   8     61520\n.text                1545813     61536\n.fini                     13   1607352\n.rodata                37356   1609728\n.eh_frame_hdr          11740   1647084\n.eh_frame              66992   1658824\n.gcc_except_table      29856   1725816\n.note.gnu.property        32   1755672\n.note.ABI-tag             32   1755704\n.tdata                    48   1757888\n.tbss                     32   1757936\n.init_array               16   1757936\n.fini_array                8   1757952\n.data.rel.ro           29064   1757960\n.dynamic                 560   1787024\n.got                    2368   1787584\n.data                   2496   1789952\n.bss                     192   1792448\n.comment                  92         0\nTotal                1786363\n\n\n"
+  },
+  "erased-macro": {
+    "sha256": "b3b58a2fd9cfd2fcfa3295195e2858ddcf73c55ed1d6c905cdf718f06b0abca7",
+    "commands": [
+      [
+        "size",
+        "-A",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-macro/release/app"
+      ],
+      [
+        "readelf",
+        "-rW",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-macro/release/app"
+      ],
+      [
+        "nm",
+        "-S",
+        "-C",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-macro/release/app"
+      ]
+    ],
+    "section_bytes": {
+      ".interp": 83,
+      ".hash": 828,
+      ".gnu.hash": 36,
+      ".dynsym": 1728,
+      ".dynstr": 1295,
+      ".gnu.version": 144,
+      ".gnu.version_r": 304,
+      ".rela.dyn": 55296,
+      ".rela.plt": 48,
+      ".init": 27,
+      ".plt": 48,
+      ".plt.got": 8,
+      ".text": 2121141,
+      ".fini": 13,
+      ".rodata": 117724,
+      ".eh_frame_hdr": 26524,
+      ".eh_frame": 170480,
+      ".gcc_except_table": 110336,
+      ".note.gnu.property": 32,
+      ".note.ABI-tag": 32,
+      ".tdata": 48,
+      ".tbss": 32,
+      ".init_array": 16,
+      ".fini_array": 8,
+      ".data.rel.ro": 29064,
+      ".dynamic": 560,
+      ".got": 2432,
+      ".data": 2496,
+      ".bss": 192,
+      ".comment": 92
+    },
+    "relocation_counts": {
+      "R_X86_64_GLOB_DAT": 69,
+      "R_X86_64_JUMP_SLOT": 2,
+      "R_X86_64_RELATIVE": 2235
+    },
+    "adapter_symbol_pattern": " as eros::error_union::SendSyncError>::as_any",
+    "adapter_symbol_count": 64,
+    "domain5_error0_adapter_definitions": [
+      "00000000000a7570 000000000000000b T <domain5::errors::Error0 as eros::error_union::SendSyncError>::as_any"
+    ],
+    "size_A_stdout": "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-macro/release/app  :\nsection                 size      addr\n.interp                   83       848\n.hash                    828       936\n.gnu.hash                 36      1768\n.dynsym                 1728      1808\n.dynstr                 1295      3536\n.gnu.version             144      4832\n.gnu.version_r           304      4976\n.rela.dyn              55296      5280\n.rela.plt                 48     60576\n.init                     27     61440\n.plt                      48     61472\n.plt.got                   8     61520\n.text                2121141     61536\n.fini                     13   2182680\n.rodata               117724   2183168\n.eh_frame_hdr          26524   2300892\n.eh_frame             170480   2327416\n.gcc_except_table     110336   2497896\n.note.gnu.property        32   2608232\n.note.ABI-tag             32   2608264\n.tdata                    48   2609792\n.tbss                     32   2609840\n.init_array               16   2609840\n.fini_array                8   2609856\n.data.rel.ro           29064   2609864\n.dynamic                 560   2638928\n.got                    2432   2639488\n.data                   2496   2641920\n.bss                     192   2644416\n.comment                  92         0\nTotal                2641067\n\n\n"
+  },
+  "erased-manual": {
+    "sha256": "8e91e77e7a6528594fd6204374e3865306689a2dc3ee0ba37eb1b2776ba3b1af",
+    "commands": [
+      [
+        "size",
+        "-A",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-manual/release/app"
+      ],
+      [
+        "readelf",
+        "-rW",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-manual/release/app"
+      ],
+      [
+        "nm",
+        "-S",
+        "-C",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-manual/release/app"
+      ]
+    ],
+    "section_bytes": {
+      ".interp": 83,
+      ".hash": 828,
+      ".gnu.hash": 36,
+      ".dynsym": 1728,
+      ".dynstr": 1295,
+      ".gnu.version": 144,
+      ".gnu.version_r": 304,
+      ".rela.dyn": 55296,
+      ".rela.plt": 48,
+      ".init": 27,
+      ".plt": 48,
+      ".plt.got": 8,
+      ".text": 2121141,
+      ".fini": 13,
+      ".rodata": 117724,
+      ".eh_frame_hdr": 26524,
+      ".eh_frame": 170480,
+      ".gcc_except_table": 110336,
+      ".note.gnu.property": 32,
+      ".note.ABI-tag": 32,
+      ".tdata": 48,
+      ".tbss": 32,
+      ".init_array": 16,
+      ".fini_array": 8,
+      ".data.rel.ro": 29064,
+      ".dynamic": 560,
+      ".got": 2432,
+      ".data": 2496,
+      ".bss": 192,
+      ".comment": 92
+    },
+    "relocation_counts": {
+      "R_X86_64_GLOB_DAT": 69,
+      "R_X86_64_JUMP_SLOT": 2,
+      "R_X86_64_RELATIVE": 2235
+    },
+    "adapter_symbol_pattern": " as eros::error_union::SendSyncError>::as_any",
+    "adapter_symbol_count": 64,
+    "domain5_error0_adapter_definitions": [
+      "00000000000a7570 000000000000000b T <domain5::errors::Error0 as eros::error_union::SendSyncError>::as_any"
+    ],
+    "size_A_stdout": "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/erased-manual/release/app  :\nsection                 size      addr\n.interp                   83       848\n.hash                    828       936\n.gnu.hash                 36      1768\n.dynsym                 1728      1808\n.dynstr                 1295      3536\n.gnu.version             144      4832\n.gnu.version_r           304      4976\n.rela.dyn              55296      5280\n.rela.plt                 48     60576\n.init                     27     61440\n.plt                      48     61472\n.plt.got                   8     61520\n.text                2121141     61536\n.fini                     13   2182680\n.rodata               117724   2183168\n.eh_frame_hdr          26524   2300892\n.eh_frame             170480   2327416\n.gcc_except_table     110336   2497896\n.note.gnu.property        32   2608232\n.note.ABI-tag             32   2608264\n.tdata                    48   2609792\n.tbss                     32   2609840\n.init_array               16   2609840\n.fini_array                8   2609856\n.data.rel.ro           29064   2609864\n.dynamic                 560   2638928\n.got                    2432   2639488\n.data                   2496   2641920\n.bss                     192   2644416\n.comment                  92         0\nTotal                2641067\n\n\n"
+  },
+  "typed-none": {
+    "sha256": "0609414708b8e64543c9b7376d1759add257e2880b7fd285bfe34e89ca595900",
+    "commands": [
+      [
+        "size",
+        "-A",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-none/release/app"
+      ],
+      [
+        "readelf",
+        "-rW",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-none/release/app"
+      ],
+      [
+        "nm",
+        "-S",
+        "-C",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-none/release/app"
+      ]
+    ],
+    "section_bytes": {
+      ".interp": 83,
+      ".hash": 828,
+      ".gnu.hash": 36,
+      ".dynsym": 1728,
+      ".dynstr": 1295,
+      ".gnu.version": 144,
+      ".gnu.version_r": 304,
+      ".rela.dyn": 55104,
+      ".rela.plt": 48,
+      ".init": 27,
+      ".plt": 48,
+      ".plt.got": 8,
+      ".text": 1545813,
+      ".fini": 13,
+      ".rodata": 37356,
+      ".eh_frame_hdr": 11740,
+      ".eh_frame": 66992,
+      ".gcc_except_table": 29856,
+      ".note.gnu.property": 32,
+      ".note.ABI-tag": 32,
+      ".tdata": 48,
+      ".tbss": 32,
+      ".init_array": 16,
+      ".fini_array": 8,
+      ".data.rel.ro": 29064,
+      ".dynamic": 560,
+      ".got": 2368,
+      ".data": 2496,
+      ".bss": 192,
+      ".comment": 92
+    },
+    "relocation_counts": {
+      "R_X86_64_GLOB_DAT": 69,
+      "R_X86_64_JUMP_SLOT": 2,
+      "R_X86_64_RELATIVE": 2227
+    },
+    "adapter_symbol_pattern": " as eros::error_union::SendSyncError>::as_any",
+    "adapter_symbol_count": 64,
+    "domain5_error0_adapter_definitions": [
+      "0000000000081120 000000000000000b T <domain5::errors::Error0 as eros::error_union::SendSyncError>::as_any"
+    ],
+    "size_A_stdout": "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-none/release/app  :\nsection                 size      addr\n.interp                   83       848\n.hash                    828       936\n.gnu.hash                 36      1768\n.dynsym                 1728      1808\n.dynstr                 1295      3536\n.gnu.version             144      4832\n.gnu.version_r           304      4976\n.rela.dyn              55104      5280\n.rela.plt                 48     60384\n.init                     27     61440\n.plt                      48     61472\n.plt.got                   8     61520\n.text                1545813     61536\n.fini                     13   1607352\n.rodata                37356   1609728\n.eh_frame_hdr          11740   1647084\n.eh_frame              66992   1658824\n.gcc_except_table      29856   1725816\n.note.gnu.property        32   1755672\n.note.ABI-tag             32   1755704\n.tdata                    48   1757888\n.tbss                     32   1757936\n.init_array               16   1757936\n.fini_array                8   1757952\n.data.rel.ro           29064   1757960\n.dynamic                 560   1787024\n.got                    2368   1787584\n.data                   2496   1789952\n.bss                     192   1792448\n.comment                  92         0\nTotal                1786363\n\n\n"
+  },
+  "typed-macro": {
+    "sha256": "d99cb82cd1e1b055c8ba2e4a4e2aa793f56e11f577e5aa7dda2110280b819f49",
+    "commands": [
+      [
+        "size",
+        "-A",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-macro/release/app"
+      ],
+      [
+        "readelf",
+        "-rW",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-macro/release/app"
+      ],
+      [
+        "nm",
+        "-S",
+        "-C",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-macro/release/app"
+      ]
+    ],
+    "section_bytes": {
+      ".interp": 83,
+      ".hash": 828,
+      ".gnu.hash": 36,
+      ".dynsym": 1728,
+      ".dynstr": 1295,
+      ".gnu.version": 144,
+      ".gnu.version_r": 304,
+      ".rela.dyn": 55296,
+      ".rela.plt": 48,
+      ".init": 27,
+      ".plt": 48,
+      ".plt.got": 8,
+      ".text": 2117189,
+      ".fini": 13,
+      ".rodata": 117724,
+      ".eh_frame_hdr": 26524,
+      ".eh_frame": 170480,
+      ".gcc_except_table": 110048,
+      ".note.gnu.property": 32,
+      ".note.ABI-tag": 32,
+      ".tdata": 48,
+      ".tbss": 32,
+      ".init_array": 16,
+      ".fini_array": 8,
+      ".data.rel.ro": 29064,
+      ".dynamic": 560,
+      ".got": 2432,
+      ".data": 2496,
+      ".bss": 192,
+      ".comment": 92
+    },
+    "relocation_counts": {
+      "R_X86_64_GLOB_DAT": 69,
+      "R_X86_64_JUMP_SLOT": 2,
+      "R_X86_64_RELATIVE": 2235
+    },
+    "adapter_symbol_pattern": " as eros::error_union::SendSyncError>::as_any",
+    "adapter_symbol_count": 64,
+    "domain5_error0_adapter_definitions": [
+      "00000000000a9d30 000000000000000b T <domain5::errors::Error0 as eros::error_union::SendSyncError>::as_any"
+    ],
+    "size_A_stdout": "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-macro/release/app  :\nsection                 size      addr\n.interp                   83       848\n.hash                    828       936\n.gnu.hash                 36      1768\n.dynsym                 1728      1808\n.dynstr                 1295      3536\n.gnu.version             144      4832\n.gnu.version_r           304      4976\n.rela.dyn              55296      5280\n.rela.plt                 48     60576\n.init                     27     61440\n.plt                      48     61472\n.plt.got                   8     61520\n.text                2117189     61536\n.fini                     13   2178728\n.rodata               117724   2179072\n.eh_frame_hdr          26524   2296796\n.eh_frame             170480   2323320\n.gcc_except_table     110048   2493800\n.note.gnu.property        32   2603848\n.note.ABI-tag             32   2603880\n.tdata                    48   2605696\n.tbss                     32   2605744\n.init_array               16   2605744\n.fini_array                8   2605760\n.data.rel.ro           29064   2605768\n.dynamic                 560   2634832\n.got                    2432   2635392\n.data                   2496   2637824\n.bss                     192   2640320\n.comment                  92         0\nTotal                2636827\n\n\n"
+  },
+  "typed-manual": {
+    "sha256": "a7cc52e377c6e9a2fd8a069aa8705500600bd1ad1b20a18cc562deddc3a16b03",
+    "commands": [
+      [
+        "size",
+        "-A",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-manual/release/app"
+      ],
+      [
+        "readelf",
+        "-rW",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-manual/release/app"
+      ],
+      [
+        "nm",
+        "-S",
+        "-C",
+        "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-manual/release/app"
+      ]
+    ],
+    "section_bytes": {
+      ".interp": 83,
+      ".hash": 828,
+      ".gnu.hash": 36,
+      ".dynsym": 1728,
+      ".dynstr": 1295,
+      ".gnu.version": 144,
+      ".gnu.version_r": 304,
+      ".rela.dyn": 55296,
+      ".rela.plt": 48,
+      ".init": 27,
+      ".plt": 48,
+      ".plt.got": 8,
+      ".text": 2117189,
+      ".fini": 13,
+      ".rodata": 117724,
+      ".eh_frame_hdr": 26524,
+      ".eh_frame": 170480,
+      ".gcc_except_table": 110048,
+      ".note.gnu.property": 32,
+      ".note.ABI-tag": 32,
+      ".tdata": 48,
+      ".tbss": 32,
+      ".init_array": 16,
+      ".fini_array": 8,
+      ".data.rel.ro": 29064,
+      ".dynamic": 560,
+      ".got": 2432,
+      ".data": 2496,
+      ".bss": 192,
+      ".comment": 92
+    },
+    "relocation_counts": {
+      "R_X86_64_GLOB_DAT": 69,
+      "R_X86_64_JUMP_SLOT": 2,
+      "R_X86_64_RELATIVE": 2235
+    },
+    "adapter_symbol_pattern": " as eros::error_union::SendSyncError>::as_any",
+    "adapter_symbol_count": 64,
+    "domain5_error0_adapter_definitions": [
+      "00000000000a9d30 000000000000000b T <domain5::errors::Error0 as eros::error_union::SendSyncError>::as_any"
+    ],
+    "size_A_stdout": "/home/dpc/lab/eros-bench/targets/context/measure/build-release-cold-target/typed-manual/release/app  :\nsection                 size      addr\n.interp                   83       848\n.hash                    828       936\n.gnu.hash                 36      1768\n.dynsym                 1728      1808\n.dynstr                 1295      3536\n.gnu.version             144      4832\n.gnu.version_r           304      4976\n.rela.dyn              55296      5280\n.rela.plt                 48     60576\n.init                     27     61440\n.plt                      48     61472\n.plt.got                   8     61520\n.text                2117189     61536\n.fini                     13   2178728\n.rodata               117724   2179072\n.eh_frame_hdr          26524   2296796\n.eh_frame             170480   2323320\n.gcc_except_table     110048   2493800\n.note.gnu.property        32   2603848\n.note.ABI-tag             32   2603880\n.tdata                    48   2605696\n.tbss                     32   2605744\n.init_array               16   2605744\n.fini_array                8   2605760\n.data.rel.ro           29064   2605768\n.dynamic                 560   2634832\n.got                    2432   2635392\n.data                   2496   2637824\n.bss                     192   2640320\n.comment                  92         0\nTotal                2636827\n\n\n"
+  }
+}

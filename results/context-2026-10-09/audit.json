@@ -1,0 +1,170 @@
+{
+  "check-warm-deps/erased-none": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-warm-deps/erased-macro": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-warm-deps/erased-manual": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-warm-deps/typed-none": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-warm-deps/typed-macro": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-warm-deps/typed-manual": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-leaf/erased-none": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-leaf/erased-macro": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-leaf/erased-manual": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-leaf/typed-none": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-leaf/typed-macro": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-leaf/typed-manual": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-shared/erased-none": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-shared/erased-macro": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-shared/erased-manual": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-shared/typed-none": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-shared/typed-macro": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-shared/typed-manual": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ]
+}

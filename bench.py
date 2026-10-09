@@ -2,6 +2,7 @@
 """Generate, validate, measure, and summarize comparable synthetic Rust projects."""
 
 import argparse
+from dataclasses import dataclass
 from contextlib import contextmanager
 import fcntl
 import hashlib
@@ -22,6 +23,33 @@ DOMAINS = 8
 MODULES = 32
 JOBS = 8
 COMMAND_DIRECTORY = None
+
+
+@dataclass(frozen=True)
+class Experiment:
+    """Keep independent experiments out of each other's sources and targets."""
+
+    name: str
+    variants: tuple
+
+    @property
+    def generated(self):
+        return ROOT / "generated" / ("context" if self.name == "context" else "")
+
+    @property
+    def targets(self):
+        return ROOT / "targets" / ("context" if self.name == "context" else "")
+
+
+PRIMARY = Experiment("primary", VARIANTS)
+CONTEXT = Experiment(
+    "context",
+    tuple(
+        f"{family}-{kind}"
+        for family in ("erased", "typed")
+        for kind in ("none", "macro", "manual")
+    ),
+)
 
 
 def digest(data):
@@ -192,8 +220,12 @@ pub fn adjust(value: u64) -> u64 {
 """
 
 
-def generate(destination, modules=MODULES, enforce_size=True):
+def generate(destination, modules=MODULES, enforce_size=True, experiment=PRIMARY):
     """Write deterministic sources; dependency resolution is a separate operation."""
+    if experiment == CONTEXT:
+        import context_workload
+
+        return context_workload.generate(destination, modules, enforce_size)
     if modules < 1:
         raise ValueError("modules must be positive")
     metadata = {}
@@ -344,12 +376,12 @@ def environment():
     return env
 
 
-def command(variant, target, mode="check", verbose=False):
+def command(variant, target, mode="check", verbose=False, experiment=PRIMARY):
     args = [
         "cargo",
         mode,
         "--manifest-path",
-        str(ROOT / "generated" / variant / "Cargo.toml"),
+        str(experiment.generated / variant / "Cargo.toml"),
         "--workspace",
         "--locked",
         "--offline",
@@ -384,7 +416,22 @@ def command_directory():
     return Path(COMMAND_DIRECTORY.name)
 
 
-def prepare():
+def prepare(experiment=PRIMARY):
+    if experiment == CONTEXT:
+        # Reuse the published pinned graph; context adds no dependencies.
+        generate(experiment.generated, experiment=experiment)
+        for variant in experiment.variants:
+            execute(
+                [
+                    "cargo",
+                    "fetch",
+                    "--locked",
+                    "--manifest-path",
+                    str(experiment.generated / variant / "Cargo.toml"),
+                ],
+                env=os.environ.copy(),
+            )
+        return
     generate(ROOT / "generated")
     for variant in VARIANTS:
         manifest = ROOT / "generated" / variant / "Cargo.toml"
@@ -412,13 +459,13 @@ def utc_now():
     return datetime.now(timezone.utc).isoformat()
 
 
-def source_manifest():
+def source_manifest(experiment=PRIMARY):
     """Verify sources and lockfiles still match the recorded generation."""
-    path = ROOT / "generated/manifest.json"
+    path = experiment.generated / "manifest.json"
     metadata = json.loads(path.read_text())
     for variant, entry in metadata.items():
         for name, expected in entry["files"].items():
-            actual = digest((ROOT / "generated" / variant / name).read_bytes())
+            actual = digest((experiment.generated / variant / name).read_bytes())
             if actual != expected:
                 raise ValueError(f"modified generated input: {variant}/{name}")
     return metadata
@@ -544,39 +591,50 @@ def validate_binary(binary):
     return cases
 
 
-def verify(output):
+def verify(output, experiment=PRIMARY):
     """Full-size behavior, determinism, and lint gates, outside scored trials."""
     output.mkdir(parents=True, exist_ok=False)
-    metadata = source_manifest()
+    metadata = source_manifest(experiment)
     with tempfile.TemporaryDirectory(dir=ROOT / "scratch") as temporary:
-        regenerated = generate(Path(temporary))
+        regenerated = generate(Path(temporary), experiment=experiment)
         if metadata != regenerated:
             raise AssertionError("generation is not deterministic")
     results = {}
-    for variant in VARIANTS:
-        target = ROOT / "targets/verify" / variant
+    for variant in experiment.variants:
+        target = experiment.targets / "verify" / variant
         with (output / f"{variant}.log").open("w") as log:
             execute(
-                command(variant, target, "clippy") + ["--", "-D", "warnings"],
+                command(variant, target, "clippy", experiment=experiment)
+                + (["--all-targets"] if experiment == CONTEXT else [])
+                + ["--", "-D", "warnings"],
                 stdout=log,
                 stderr=log,
             )
             results[variant] = {}
             for release in (False, True):
-                args = command(variant, target, "build") + (
+                args = command(variant, target, "build", experiment=experiment) + (
                     ["--release"] if release else []
                 )
                 execute(args, stdout=log, stderr=log)
                 profile = "release" if release else "debug"
                 results[variant][profile] = validate_binary(target / profile / "app")
+                if experiment == CONTEXT:
+                    execute(
+                        command(variant, target, "test", experiment=experiment)
+                        + ["--tests"]
+                        + (["--release"] if release else []),
+                        stdout=log,
+                        stderr=log,
+                    )
+            if experiment == CONTEXT:
+                results[variant]["context_tests"] = "passed in debug and release"
     write(output / "validation.json", json.dumps(results, indent=2) + "\n")
     write(output / "source-manifest.json", json.dumps(metadata, indent=2) + "\n")
 
 
-def mutation_path(variant, shared=False):
+def mutation_path(variant, shared=False, experiment=PRIMARY):
     return (
-        ROOT
-        / "generated"
+        experiment.generated
         / variant
         / ("model/src/lib.rs" if shared else "domain0/src/workflow_000.rs")
     )
@@ -600,12 +658,12 @@ def mutate(path, state, shared=False):
     path.write_text(changed)
 
 
-def clean_local(variant, target, log):
+def clean_local(variant, target, log, experiment=PRIMARY):
     args = [
         "cargo",
         "clean",
         "--manifest-path",
-        str(ROOT / "generated" / variant / "Cargo.toml"),
+        str(experiment.generated / variant / "Cargo.toml"),
         "--target-dir",
         str(target),
     ]
@@ -625,7 +683,7 @@ def audit_rebuild(log, expected):
     return sorted(rebuilt)
 
 
-def summarize(output):
+def summarize(output, experiment=PRIMARY):
     records = [
         json.loads(line) for line in (output / "raw.jsonl").read_text().splitlines()
     ]
@@ -645,7 +703,7 @@ def summarize(output):
     summary = {}
     for mode in dict.fromkeys(row["mode"] for row in records):
         summary[mode] = {}
-        for variant in VARIANTS:
+        for variant in experiment.variants:
             rows = [r for r in records if r["mode"] == mode and r["variant"] == variant]
             if not rows:
                 raise ValueError(f"incomplete mode: {mode}/{variant}")
@@ -666,10 +724,14 @@ def summarize(output):
                 "median_maxrss_kib": statistics.median(r["maxrss_kib"] for r in rows),
             }
     write(output / "summary.json", json.dumps(summary, indent=2) + "\n")
-    table = "| Mode (seconds: median [min–max]) | " + " | ".join(VARIANTS) + " |\n"
-    table += "|---|" + "---|" * len(VARIANTS) + "\n"
+    table = (
+        "| Mode (seconds: median [min–max]) | "
+        + " | ".join(experiment.variants)
+        + " |\n"
+    )
+    table += "|---|" + "---|" * len(experiment.variants) + "\n"
     for mode, entries in summary.items():
-        table += f"| {mode} (n={entries[VARIANTS[0]]['n']}) |"
+        table += f"| {mode} (n={entries[experiment.variants[0]]['n']}) |"
         for entry in entries.values():
             table += f" {entry['median_seconds']:.3f} [{entry['min_seconds']:.3f}–{entry['max_seconds']:.3f}] |"
         table += "\n"
@@ -696,15 +758,9 @@ def binary_sizes(binary, output, variant, profile, trial):
         stream.write(json.dumps(entry) + "\n")
 
 
-def measure(output, check_trials=5, build_trials=3, noop_trials=10):
-    metadata = source_manifest()
-    output.mkdir(parents=True, exist_ok=False)
-    (output / "logs").mkdir()
-    write(
-        output / "environment.json", json.dumps(inspect_environment(), indent=2) + "\n"
-    )
-    write(output / "source-manifest.json", json.dumps(metadata, indent=2) + "\n")
-    shutil.copyfile(Path(__file__), output / "bench.py.snapshot")
+def measurement_plan(experiment, check_trials, build_trials, noop_trials):
+    """Predeclare every scored command, including its order within each block."""
+    variants = experiment.variants
     modes = (
         "check-cold-target",
         "check-warm-deps",
@@ -727,17 +783,47 @@ def measure(output, check_trials=5, build_trials=3, noop_trials=10):
         )
         for trial in range(trials):
             order = (
-                VARIANTS[trial % len(VARIANTS) :] + VARIANTS[: trial % len(VARIANTS)]
+                variants[trial % len(variants) :] + variants[: trial % len(variants)]
             )
             cells.extend(
                 {"mode": mode, "variant": variant, "trial": trial, "position": position}
                 for position, variant in enumerate(order)
             )
-    write(output / "plan.json", json.dumps({"cells": cells}, indent=2) + "\n")
+    return {"experiment": experiment.name, "variants": variants, "cells": cells}
+
+
+def measure(output, check_trials=5, build_trials=3, noop_trials=10, experiment=PRIMARY):
+    plan = measurement_plan(experiment, check_trials, build_trials, noop_trials)
+    modes = list(dict.fromkeys(cell["mode"] for cell in plan["cells"]))
+    variants = experiment.variants
+    metadata = source_manifest(experiment)
+    output.mkdir(parents=True, exist_ok=False)
+    (output / "logs").mkdir()
+    environment_metadata = inspect_environment()
+    environment_metadata["experiment"] = experiment.name
+    if experiment == CONTEXT:
+        environment_metadata["context_generator_sha256"] = digest(
+            (ROOT / "context_workload.py").read_bytes()
+        )
+    write(
+        output / "environment.json", json.dumps(environment_metadata, indent=2) + "\n"
+    )
+    write(output / "source-manifest.json", json.dumps(metadata, indent=2) + "\n")
+    shutil.copyfile(Path(__file__), output / "bench.py.snapshot")
+    if experiment == CONTEXT:
+        shutil.copyfile(
+            ROOT / "context_workload.py", output / "context_workload.py.snapshot"
+        )
+    write(
+        output / "plan.json",
+        json.dumps(plan, indent=2) + "\n",
+    )
     audit = {}
     originals = {
-        mutation_path(v, shared): mutation_path(v, shared).read_bytes()
-        for v in VARIANTS
+        mutation_path(v, shared, experiment): mutation_path(
+            v, shared, experiment
+        ).read_bytes()
+        for v in variants
         for shared in (False, True)
     }
     states = {}
@@ -753,25 +839,31 @@ def measure(output, check_trials=5, build_trials=3, noop_trials=10):
                 )
                 if trials < 1:
                     raise ValueError("trial counts must be positive")
-                for variant in VARIANTS:
-                    target = ROOT / "targets/measure" / mode / variant
+                for variant in variants:
+                    target = experiment.targets / "measure" / mode / variant
                     if target.exists():
                         shutil.rmtree(target)
                     if "cold-target" not in mode:
-                        execute(command(variant, target), stdout=setup, stderr=setup)
+                        execute(
+                            command(variant, target, experiment=experiment),
+                            stdout=setup,
+                            stderr=setup,
+                        )
                     if mode in (
                         "check-warm-deps",
                         "check-edit-leaf",
                         "check-edit-shared",
                     ):
                         if mode == "check-warm-deps":
-                            clean_local(variant, target, setup)
+                            clean_local(variant, target, setup, experiment)
                             expected = ["model", "app"] + [
                                 f"domain{d}" for d in range(DOMAINS)
                             ]
                         else:
                             shared = mode == "check-edit-shared"
-                            mutate(mutation_path(variant, shared), True, shared)
+                            mutate(
+                                mutation_path(variant, shared, experiment), True, shared
+                            )
                             states[variant] = True
                             expected = (
                                 ["model", "app"]
@@ -782,33 +874,38 @@ def measure(output, check_trials=5, build_trials=3, noop_trials=10):
                         logpath = output / "logs" / f"audit-{mode}-{variant}.log"
                         with logpath.open("w") as log:
                             execute(
-                                command(variant, target, verbose=True),
+                                command(
+                                    variant, target, verbose=True, experiment=experiment
+                                ),
                                 stdout=log,
                                 stderr=log,
                             )
                         audit[f"{mode}/{variant}"] = audit_rebuild(logpath, expected)
                 for trial in range(trials):
-                    # Balanced rotation for five check blocks; exact order is recorded.
+                    # Complete cycles balance positions; exact order is recorded.
                     order = (
-                        VARIANTS[trial % len(VARIANTS) :]
-                        + VARIANTS[: trial % len(VARIANTS)]
+                        variants[trial % len(variants) :]
+                        + variants[: trial % len(variants)]
                     )
                     for position, variant in enumerate(order):
-                        target = ROOT / "targets/measure" / mode / variant
+                        target = experiment.targets / "measure" / mode / variant
                         if "cold-target" in mode and target.exists():
                             shutil.rmtree(target)
                         if mode == "check-warm-deps":
-                            clean_local(variant, target, setup)
+                            clean_local(variant, target, setup, experiment)
                         if mode.startswith("check-edit"):
                             shared = mode == "check-edit-shared"
                             states[variant] = not states[variant]
                             mutate(
-                                mutation_path(variant, shared), states[variant], shared
+                                mutation_path(variant, shared, experiment),
+                                states[variant],
+                                shared,
                             )
                         args = command(
                             variant,
                             target,
                             "build" if mode.startswith("build") else "check",
+                            experiment=experiment,
                         )
                         if mode == "build-release-cold-target":
                             args.append("--release")
@@ -876,16 +973,18 @@ def measure(output, check_trials=5, build_trials=3, noop_trials=10):
                                 json.dumps(validation, indent=2) + "\n",
                             )
                 if mode.startswith("check-edit"):
-                    for variant in VARIANTS:
-                        path = mutation_path(variant, mode == "check-edit-shared")
+                    for variant in variants:
+                        path = mutation_path(
+                            variant, mode == "check-edit-shared", experiment
+                        )
                         path.write_bytes(originals[path])
     finally:
         for path, content in originals.items():
             if path.read_bytes() != content:
                 path.write_bytes(content)
     write(output / "audit.json", json.dumps(audit, indent=2) + "\n")
-    source_manifest()
-    summarize(output)
+    source_manifest(experiment)
+    summarize(output, experiment)
     write(
         output / "complete.json",
         json.dumps(
@@ -907,25 +1006,39 @@ def main():
         "action", choices=["generate", "prepare", "verify", "measure", "summarize"]
     )
     parser.add_argument("--output", type=Path)
-    parser.add_argument("--check-trials", type=int, default=5)
+    parser.add_argument(
+        "--experiment", choices=["primary", "context"], default="primary"
+    )
+    parser.add_argument("--check-trials", type=int)
     parser.add_argument("--build-trials", type=int, default=3)
-    parser.add_argument("--noop-trials", type=int, default=10)
+    parser.add_argument("--noop-trials", type=int)
     args = parser.parse_args()
+    experiment = CONTEXT if args.experiment == "context" else PRIMARY
     with exclusive():
         if args.action == "generate":
-            generate(ROOT / "generated")
+            generate(experiment.generated, experiment=experiment)
         elif args.action == "prepare":
-            prepare()
+            prepare(experiment)
         else:
             if args.output is None:
                 parser.error("--output is required")
             output = args.output.resolve()
             if args.action == "verify":
-                verify(output)
+                verify(output, experiment)
             elif args.action == "measure":
-                measure(output, args.check_trials, args.build_trials, args.noop_trials)
+                measure(
+                    output,
+                    args.check_trials
+                    if args.check_trials is not None
+                    else (6 if experiment == CONTEXT else 5),
+                    args.build_trials,
+                    args.noop_trials
+                    if args.noop_trials is not None
+                    else (12 if experiment == CONTEXT else 10),
+                    experiment,
+                )
             else:
-                summarize(output)
+                summarize(output, experiment)
 
 
 if __name__ == "__main__":

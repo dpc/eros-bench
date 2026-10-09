@@ -1,0 +1,17 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+    Checking eros v0.8.1
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain0)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain6)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain2)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain5)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain3)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain7)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain4)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/domain1)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/erased-manual/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.62s

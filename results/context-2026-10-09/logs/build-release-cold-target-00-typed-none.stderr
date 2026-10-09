@@ -1,0 +1,17 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling model v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/model)
+   Compiling syn v2.0.119
+   Compiling eros-macros v0.8.1
+   Compiling eros v0.8.1
+   Compiling domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain6)
+   Compiling domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain0)
+   Compiling domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain7)
+   Compiling domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain5)
+   Compiling domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain1)
+   Compiling domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain4)
+   Compiling domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain2)
+   Compiling domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/domain3)
+   Compiling app v0.1.0 (/home/dpc/lab/eros-bench/generated/context/typed-none/app)
+    Finished `release` profile [optimized] target(s) in 6.21s
