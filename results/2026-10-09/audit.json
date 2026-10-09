@@ -1,0 +1,142 @@
+{
+  "check-warm-deps/anyhow": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-warm-deps/eros-erased": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-warm-deps/eros-typed": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-warm-deps/eros-typed-lean": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-warm-deps/thiserror": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-leaf/anyhow": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-leaf/eros-erased": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-leaf/eros-typed": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-leaf/eros-typed-lean": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-leaf/thiserror": [
+    "app",
+    "domain0"
+  ],
+  "check-edit-shared/anyhow": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-shared/eros-erased": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-shared/eros-typed": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-shared/eros-typed-lean": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ],
+  "check-edit-shared/thiserror": [
+    "app",
+    "domain0",
+    "domain1",
+    "domain2",
+    "domain3",
+    "domain4",
+    "domain5",
+    "domain6",
+    "domain7",
+    "model"
+  ]
+}

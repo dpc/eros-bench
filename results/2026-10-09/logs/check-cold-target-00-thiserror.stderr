@@ -1,0 +1,17 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling thiserror v2.0.21
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/model)
+   Compiling syn v3.0.6
+   Compiling thiserror-impl v2.0.21
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain1)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain3)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain2)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain4)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain5)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain7)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain6)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain0)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.48s

@@ -1,0 +1,366 @@
+{
+  "check-cold-target": {
+    "anyhow": {
+      "n": 5,
+      "median_seconds": 0.9105494469986297,
+      "min_seconds": 0.904963200999191,
+      "max_seconds": 1.099345180002274,
+      "mad_seconds": 0.005586245999438688,
+      "median_user_seconds": 3.67,
+      "median_system_seconds": 0.6,
+      "median_maxrss_kib": 192512
+    },
+    "eros-erased": {
+      "n": 5,
+      "median_seconds": 3.562140804999217,
+      "min_seconds": 3.5135645359987393,
+      "max_seconds": 4.041372047999175,
+      "mad_seconds": 0.04857626900047762,
+      "median_user_seconds": 7.03,
+      "median_system_seconds": 1.08,
+      "median_maxrss_kib": 362936
+    },
+    "eros-typed": {
+      "n": 5,
+      "median_seconds": 3.82265550000011,
+      "min_seconds": 3.601013363004313,
+      "max_seconds": 4.266284124001686,
+      "mad_seconds": 0.18846974299958674,
+      "median_user_seconds": 7.89,
+      "median_system_seconds": 1.07,
+      "median_maxrss_kib": 364004
+    },
+    "eros-typed-lean": {
+      "n": 5,
+      "median_seconds": 3.855177432000346,
+      "min_seconds": 3.597773114001029,
+      "max_seconds": 5.197409637999954,
+      "mad_seconds": 0.1862861810004688,
+      "median_user_seconds": 7.87,
+      "median_system_seconds": 1.08,
+      "median_maxrss_kib": 362224
+    },
+    "thiserror": {
+      "n": 5,
+      "median_seconds": 2.9414944909949554,
+      "min_seconds": 2.787622891002684,
+      "max_seconds": 3.4994820809952216,
+      "mad_seconds": 0.1495670859949314,
+      "median_user_seconds": 6.91,
+      "median_system_seconds": 1.16,
+      "median_maxrss_kib": 318792
+    }
+  },
+  "check-warm-deps": {
+    "anyhow": {
+      "n": 5,
+      "median_seconds": 0.6131579060020158,
+      "min_seconds": 0.592396939995524,
+      "max_seconds": 0.6569117489998462,
+      "mad_seconds": 0.006725343999278266,
+      "median_user_seconds": 3.58,
+      "median_system_seconds": 0.44,
+      "median_maxrss_kib": 192704
+    },
+    "eros-erased": {
+      "n": 5,
+      "median_seconds": 0.6304113839942147,
+      "min_seconds": 0.5943080629949691,
+      "max_seconds": 0.6851097879989538,
+      "mad_seconds": 0.03163511599996127,
+      "median_user_seconds": 3.65,
+      "median_system_seconds": 0.44,
+      "median_maxrss_kib": 195776
+    },
+    "eros-typed": {
+      "n": 5,
+      "median_seconds": 0.7016866799967829,
+      "min_seconds": 0.6820034490010585,
+      "max_seconds": 0.7462605459950282,
+      "mad_seconds": 0.013544954999815673,
+      "median_user_seconds": 4.24,
+      "median_system_seconds": 0.46,
+      "median_maxrss_kib": 197348
+    },
+    "eros-typed-lean": {
+      "n": 5,
+      "median_seconds": 0.6859426340015489,
+      "min_seconds": 0.6740986700024223,
+      "max_seconds": 0.7721350009960588,
+      "mad_seconds": 0.009901461991830729,
+      "median_user_seconds": 4.2,
+      "median_system_seconds": 0.44,
+      "median_maxrss_kib": 197600
+    },
+    "thiserror": {
+      "n": 5,
+      "median_seconds": 0.6746407649989123,
+      "min_seconds": 0.6467711889999919,
+      "max_seconds": 0.6808537609977066,
+      "mad_seconds": 0.006007342002703808,
+      "median_user_seconds": 4.01,
+      "median_system_seconds": 0.47,
+      "median_maxrss_kib": 199552
+    }
+  },
+  "check-noop": {
+    "anyhow": {
+      "n": 10,
+      "median_seconds": 0.02234572800080059,
+      "min_seconds": 0.019648955996672157,
+      "max_seconds": 0.02366731900110608,
+      "mad_seconds": 0.0006758484996680636,
+      "median_user_seconds": 0.01,
+      "median_system_seconds": 0.0,
+      "median_maxrss_kib": 33586.0
+    },
+    "eros-erased": {
+      "n": 10,
+      "median_seconds": 0.024308216998178978,
+      "min_seconds": 0.023702685000898782,
+      "max_seconds": 0.02898620300402399,
+      "mad_seconds": 0.00046786950042587705,
+      "median_user_seconds": 0.01,
+      "median_system_seconds": 0.0,
+      "median_maxrss_kib": 34696.0
+    },
+    "eros-typed": {
+      "n": 10,
+      "median_seconds": 0.02453940949999378,
+      "min_seconds": 0.023676295997574925,
+      "max_seconds": 0.03043667499878211,
+      "mad_seconds": 0.00028569899950525723,
+      "median_user_seconds": 0.01,
+      "median_system_seconds": 0.0,
+      "median_maxrss_kib": 34768.0
+    },
+    "eros-typed-lean": {
+      "n": 10,
+      "median_seconds": 0.024332687997230096,
+      "min_seconds": 0.023059102000843268,
+      "max_seconds": 0.034816513005353045,
+      "mad_seconds": 0.00024855950323399156,
+      "median_user_seconds": 0.01,
+      "median_system_seconds": 0.0,
+      "median_maxrss_kib": 34784.0
+    },
+    "thiserror": {
+      "n": 10,
+      "median_seconds": 0.024488524497428443,
+      "min_seconds": 0.022831146001408342,
+      "max_seconds": 0.025818941998295486,
+      "mad_seconds": 0.00011673349945340306,
+      "median_user_seconds": 0.01,
+      "median_system_seconds": 0.0,
+      "median_maxrss_kib": 35056.0
+    }
+  },
+  "check-edit-leaf": {
+    "anyhow": {
+      "n": 5,
+      "median_seconds": 0.21650357799808262,
+      "min_seconds": 0.19152164200204425,
+      "max_seconds": 0.2189275210039341,
+      "mad_seconds": 0.00242394300585147,
+      "median_user_seconds": 0.13,
+      "median_system_seconds": 0.07,
+      "median_maxrss_kib": 173340
+    },
+    "eros-erased": {
+      "n": 5,
+      "median_seconds": 0.21904440900107147,
+      "min_seconds": 0.1985679249992245,
+      "max_seconds": 0.3426614359996165,
+      "mad_seconds": 0.01953705699997954,
+      "median_user_seconds": 0.14,
+      "median_system_seconds": 0.06,
+      "median_maxrss_kib": 175136
+    },
+    "eros-typed": {
+      "n": 5,
+      "median_seconds": 0.22012944799644174,
+      "min_seconds": 0.20497253999928944,
+      "max_seconds": 0.4516965990042081,
+      "mad_seconds": 0.015156907997152302,
+      "median_user_seconds": 0.15,
+      "median_system_seconds": 0.06,
+      "median_maxrss_kib": 176036
+    },
+    "eros-typed-lean": {
+      "n": 5,
+      "median_seconds": 0.21870983400003752,
+      "min_seconds": 0.2020743820030475,
+      "max_seconds": 0.49008501000207616,
+      "mad_seconds": 0.010214488000201527,
+      "median_user_seconds": 0.13,
+      "median_system_seconds": 0.07,
+      "median_maxrss_kib": 176240
+    },
+    "thiserror": {
+      "n": 5,
+      "median_seconds": 0.25223672600259306,
+      "min_seconds": 0.22314779100270243,
+      "max_seconds": 0.2579015770024853,
+      "mad_seconds": 0.005664850999892224,
+      "median_user_seconds": 0.16,
+      "median_system_seconds": 0.07,
+      "median_maxrss_kib": 181092
+    }
+  },
+  "check-edit-shared": {
+    "anyhow": {
+      "n": 5,
+      "median_seconds": 0.24495085400121752,
+      "min_seconds": 0.22787372700258857,
+      "max_seconds": 0.25190414499957114,
+      "mad_seconds": 0.0054176999983610585,
+      "median_user_seconds": 0.77,
+      "median_system_seconds": 0.32,
+      "median_maxrss_kib": 161884
+    },
+    "eros-erased": {
+      "n": 5,
+      "median_seconds": 0.24655561499821488,
+      "min_seconds": 0.23637921999761602,
+      "max_seconds": 0.3083159730012994,
+      "mad_seconds": 0.006727037005475722,
+      "median_user_seconds": 0.76,
+      "median_system_seconds": 0.32,
+      "median_maxrss_kib": 161124
+    },
+    "eros-typed": {
+      "n": 5,
+      "median_seconds": 0.24594662700110348,
+      "min_seconds": 0.23707143399951747,
+      "max_seconds": 0.25481785200099694,
+      "mad_seconds": 0.0029907610005466267,
+      "median_user_seconds": 0.79,
+      "median_system_seconds": 0.32,
+      "median_maxrss_kib": 163156
+    },
+    "eros-typed-lean": {
+      "n": 5,
+      "median_seconds": 0.2578161679994082,
+      "min_seconds": 0.24661072799790418,
+      "max_seconds": 0.2631723119993694,
+      "mad_seconds": 0.00326525499986019,
+      "median_user_seconds": 0.79,
+      "median_system_seconds": 0.32,
+      "median_maxrss_kib": 163876
+    },
+    "thiserror": {
+      "n": 5,
+      "median_seconds": 0.2761274730000878,
+      "min_seconds": 0.2641648979988531,
+      "max_seconds": 0.2796547480029403,
+      "mad_seconds": 0.003527275002852548,
+      "median_user_seconds": 0.91,
+      "median_system_seconds": 0.36,
+      "median_maxrss_kib": 168764
+    }
+  },
+  "build-dev-cold-target": {
+    "anyhow": {
+      "n": 3,
+      "median_seconds": 2.1532282309999573,
+      "min_seconds": 2.145822917998885,
+      "max_seconds": 2.3783586760036997,
+      "mad_seconds": 0.0074053130010725,
+      "median_user_seconds": 9.51,
+      "median_system_seconds": 0.98,
+      "median_maxrss_kib": 234848
+    },
+    "eros-erased": {
+      "n": 3,
+      "median_seconds": 6.937186817995098,
+      "min_seconds": 4.649485405003361,
+      "max_seconds": 7.2884932050001225,
+      "mad_seconds": 0.3513063870050246,
+      "median_user_seconds": 14.86,
+      "median_system_seconds": 1.66,
+      "median_maxrss_kib": 361296
+    },
+    "eros-typed": {
+      "n": 3,
+      "median_seconds": 5.1749632060018484,
+      "min_seconds": 4.827174881000246,
+      "max_seconds": 13.747036555003433,
+      "mad_seconds": 0.34778832500160206,
+      "median_user_seconds": 13.77,
+      "median_system_seconds": 1.52,
+      "median_maxrss_kib": 363084
+    },
+    "eros-typed-lean": {
+      "n": 3,
+      "median_seconds": 5.272961048001889,
+      "min_seconds": 4.750183627998922,
+      "max_seconds": 5.706535848003114,
+      "mad_seconds": 0.4335748000012245,
+      "median_user_seconds": 13.44,
+      "median_system_seconds": 1.42,
+      "median_maxrss_kib": 362908
+    },
+    "thiserror": {
+      "n": 3,
+      "median_seconds": 3.930825339994044,
+      "min_seconds": 3.886304879997624,
+      "max_seconds": 4.210358493000967,
+      "mad_seconds": 0.04452045999641996,
+      "median_user_seconds": 12.02,
+      "median_system_seconds": 1.51,
+      "median_maxrss_kib": 317876
+    }
+  },
+  "build-release-cold-target": {
+    "anyhow": {
+      "n": 3,
+      "median_seconds": 3.566749218000041,
+      "min_seconds": 3.410715548998269,
+      "max_seconds": 3.583308991001104,
+      "mad_seconds": 0.01655977300106315,
+      "median_user_seconds": 22.39,
+      "median_system_seconds": 0.82,
+      "median_maxrss_kib": 226444
+    },
+    "eros-erased": {
+      "n": 3,
+      "median_seconds": 6.180599236002308,
+      "min_seconds": 6.1703602990019135,
+      "max_seconds": 10.547404737997567,
+      "mad_seconds": 0.010238937000394799,
+      "median_user_seconds": 25.68,
+      "median_system_seconds": 1.27,
+      "median_maxrss_kib": 376256
+    },
+    "eros-typed": {
+      "n": 3,
+      "median_seconds": 6.600883996004995,
+      "min_seconds": 6.273347460999503,
+      "max_seconds": 7.102574948003166,
+      "mad_seconds": 0.3275365350054926,
+      "median_user_seconds": 27.31,
+      "median_system_seconds": 1.33,
+      "median_maxrss_kib": 374704
+    },
+    "eros-typed-lean": {
+      "n": 3,
+      "median_seconds": 6.552199648998794,
+      "min_seconds": 6.230946851006593,
+      "max_seconds": 10.923649240998202,
+      "mad_seconds": 0.3212527979922015,
+      "median_user_seconds": 26.14,
+      "median_system_seconds": 1.45,
+      "median_maxrss_kib": 371108
+    },
+    "thiserror": {
+      "n": 3,
+      "median_seconds": 5.322989259999304,
+      "min_seconds": 4.990741179004544,
+      "max_seconds": 5.904155832002289,
+      "mad_seconds": 0.3322480809947592,
+      "median_user_seconds": 23.69,
+      "median_system_seconds": 1.36,
+      "median_maxrss_kib": 310100
+    }
+  }
+}

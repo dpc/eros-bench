@@ -1,0 +1,1084 @@
+{
+  "cells": [
+    {
+      "mode": "check-cold-target",
+      "variant": "anyhow",
+      "trial": 0,
+      "position": 0
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-erased",
+      "trial": 0,
+      "position": 1
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed",
+      "trial": 0,
+      "position": 2
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 0,
+      "position": 3
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "thiserror",
+      "trial": 0,
+      "position": 4
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-erased",
+      "trial": 1,
+      "position": 0
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed",
+      "trial": 1,
+      "position": 1
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 1,
+      "position": 2
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "thiserror",
+      "trial": 1,
+      "position": 3
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "anyhow",
+      "trial": 1,
+      "position": 4
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed",
+      "trial": 2,
+      "position": 0
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 2,
+      "position": 1
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "thiserror",
+      "trial": 2,
+      "position": 2
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "anyhow",
+      "trial": 2,
+      "position": 3
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-erased",
+      "trial": 2,
+      "position": 4
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 3,
+      "position": 0
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "thiserror",
+      "trial": 3,
+      "position": 1
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "anyhow",
+      "trial": 3,
+      "position": 2
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-erased",
+      "trial": 3,
+      "position": 3
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed",
+      "trial": 3,
+      "position": 4
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "thiserror",
+      "trial": 4,
+      "position": 0
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "anyhow",
+      "trial": 4,
+      "position": 1
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-erased",
+      "trial": 4,
+      "position": 2
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed",
+      "trial": 4,
+      "position": 3
+    },
+    {
+      "mode": "check-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 4,
+      "position": 4
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "anyhow",
+      "trial": 0,
+      "position": 0
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-erased",
+      "trial": 0,
+      "position": 1
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed",
+      "trial": 0,
+      "position": 2
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed-lean",
+      "trial": 0,
+      "position": 3
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "thiserror",
+      "trial": 0,
+      "position": 4
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-erased",
+      "trial": 1,
+      "position": 0
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed",
+      "trial": 1,
+      "position": 1
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed-lean",
+      "trial": 1,
+      "position": 2
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "thiserror",
+      "trial": 1,
+      "position": 3
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "anyhow",
+      "trial": 1,
+      "position": 4
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed",
+      "trial": 2,
+      "position": 0
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed-lean",
+      "trial": 2,
+      "position": 1
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "thiserror",
+      "trial": 2,
+      "position": 2
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "anyhow",
+      "trial": 2,
+      "position": 3
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-erased",
+      "trial": 2,
+      "position": 4
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed-lean",
+      "trial": 3,
+      "position": 0
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "thiserror",
+      "trial": 3,
+      "position": 1
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "anyhow",
+      "trial": 3,
+      "position": 2
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-erased",
+      "trial": 3,
+      "position": 3
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed",
+      "trial": 3,
+      "position": 4
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "thiserror",
+      "trial": 4,
+      "position": 0
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "anyhow",
+      "trial": 4,
+      "position": 1
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-erased",
+      "trial": 4,
+      "position": 2
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed",
+      "trial": 4,
+      "position": 3
+    },
+    {
+      "mode": "check-warm-deps",
+      "variant": "eros-typed-lean",
+      "trial": 4,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 0,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 0,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 0,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 0,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 0,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 1,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 1,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 1,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 1,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 1,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 2,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 2,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 2,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 2,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 2,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 3,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 3,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 3,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 3,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 3,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 4,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 4,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 4,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 4,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 4,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 5,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 5,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 5,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 5,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 5,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 6,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 6,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 6,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 6,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 6,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 7,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 7,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 7,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 7,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 7,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 8,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 8,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 8,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 8,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 8,
+      "position": 4
+    },
+    {
+      "mode": "check-noop",
+      "variant": "thiserror",
+      "trial": 9,
+      "position": 0
+    },
+    {
+      "mode": "check-noop",
+      "variant": "anyhow",
+      "trial": 9,
+      "position": 1
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-erased",
+      "trial": 9,
+      "position": 2
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed",
+      "trial": 9,
+      "position": 3
+    },
+    {
+      "mode": "check-noop",
+      "variant": "eros-typed-lean",
+      "trial": 9,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "anyhow",
+      "trial": 0,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-erased",
+      "trial": 0,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed",
+      "trial": 0,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed-lean",
+      "trial": 0,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "thiserror",
+      "trial": 0,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-erased",
+      "trial": 1,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed",
+      "trial": 1,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed-lean",
+      "trial": 1,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "thiserror",
+      "trial": 1,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "anyhow",
+      "trial": 1,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed",
+      "trial": 2,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed-lean",
+      "trial": 2,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "thiserror",
+      "trial": 2,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "anyhow",
+      "trial": 2,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-erased",
+      "trial": 2,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed-lean",
+      "trial": 3,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "thiserror",
+      "trial": 3,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "anyhow",
+      "trial": 3,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-erased",
+      "trial": 3,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed",
+      "trial": 3,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "thiserror",
+      "trial": 4,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "anyhow",
+      "trial": 4,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-erased",
+      "trial": 4,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed",
+      "trial": 4,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-leaf",
+      "variant": "eros-typed-lean",
+      "trial": 4,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "anyhow",
+      "trial": 0,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-erased",
+      "trial": 0,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed",
+      "trial": 0,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed-lean",
+      "trial": 0,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "thiserror",
+      "trial": 0,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-erased",
+      "trial": 1,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed",
+      "trial": 1,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed-lean",
+      "trial": 1,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "thiserror",
+      "trial": 1,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "anyhow",
+      "trial": 1,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed",
+      "trial": 2,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed-lean",
+      "trial": 2,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "thiserror",
+      "trial": 2,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "anyhow",
+      "trial": 2,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-erased",
+      "trial": 2,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed-lean",
+      "trial": 3,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "thiserror",
+      "trial": 3,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "anyhow",
+      "trial": 3,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-erased",
+      "trial": 3,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed",
+      "trial": 3,
+      "position": 4
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "thiserror",
+      "trial": 4,
+      "position": 0
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "anyhow",
+      "trial": 4,
+      "position": 1
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-erased",
+      "trial": 4,
+      "position": 2
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed",
+      "trial": 4,
+      "position": 3
+    },
+    {
+      "mode": "check-edit-shared",
+      "variant": "eros-typed-lean",
+      "trial": 4,
+      "position": 4
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "anyhow",
+      "trial": 0,
+      "position": 0
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "eros-erased",
+      "trial": 0,
+      "position": 1
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "eros-typed",
+      "trial": 0,
+      "position": 2
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 0,
+      "position": 3
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "thiserror",
+      "trial": 0,
+      "position": 4
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "eros-erased",
+      "trial": 1,
+      "position": 0
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "eros-typed",
+      "trial": 1,
+      "position": 1
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 1,
+      "position": 2
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "thiserror",
+      "trial": 1,
+      "position": 3
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "anyhow",
+      "trial": 1,
+      "position": 4
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "eros-typed",
+      "trial": 2,
+      "position": 0
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 2,
+      "position": 1
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "thiserror",
+      "trial": 2,
+      "position": 2
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "anyhow",
+      "trial": 2,
+      "position": 3
+    },
+    {
+      "mode": "build-dev-cold-target",
+      "variant": "eros-erased",
+      "trial": 2,
+      "position": 4
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "anyhow",
+      "trial": 0,
+      "position": 0
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "eros-erased",
+      "trial": 0,
+      "position": 1
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "eros-typed",
+      "trial": 0,
+      "position": 2
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 0,
+      "position": 3
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "thiserror",
+      "trial": 0,
+      "position": 4
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "eros-erased",
+      "trial": 1,
+      "position": 0
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "eros-typed",
+      "trial": 1,
+      "position": 1
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 1,
+      "position": 2
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "thiserror",
+      "trial": 1,
+      "position": 3
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "anyhow",
+      "trial": 1,
+      "position": 4
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "eros-typed",
+      "trial": 2,
+      "position": 0
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "eros-typed-lean",
+      "trial": 2,
+      "position": 1
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "thiserror",
+      "trial": 2,
+      "position": 2
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "anyhow",
+      "trial": 2,
+      "position": 3
+    },
+    {
+      "mode": "build-release-cold-target",
+      "variant": "eros-erased",
+      "trial": 2,
+      "position": 4
+    }
+  ]
+}

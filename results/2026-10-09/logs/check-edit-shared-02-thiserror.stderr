@@ -1,0 +1,11 @@
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/model)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain5)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain7)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain3)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain2)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain1)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain6)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain0)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/domain4)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/thiserror/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.26s

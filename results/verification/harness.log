@@ -1,0 +1,14 @@
+test_command_directory_ignores_callers_cargo_config (test_bench.HarnessTests.test_command_directory_ignores_callers_cargo_config) ... ok
+test_deterministic_generation_and_shape (test_bench.HarnessTests.test_deterministic_generation_and_shape) ... ok
+test_mutation_roundtrip (test_bench.HarnessTests.test_mutation_roundtrip) ... ok
+test_oracle_failure_categories (test_bench.HarnessTests.test_oracle_failure_categories) ... ok
+test_precise_sets (test_bench.HarnessTests.test_precise_sets) ... ok
+test_rebuild_audit_rejects_dependency_build (test_bench.HarnessTests.test_rebuild_audit_rejects_dependency_build) ... ok
+test_size_guard (test_bench.HarnessTests.test_size_guard) ... ok
+test_summary_rejects_failure (test_bench.HarnessTests.test_summary_rejects_failure) ... ok
+test_summary_rejects_interrupted_or_duplicate_cells (test_bench.HarnessTests.test_summary_rejects_interrupted_or_duplicate_cells) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.086s
+
+OK

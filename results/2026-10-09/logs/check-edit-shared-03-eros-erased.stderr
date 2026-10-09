@@ -1,0 +1,11 @@
+    Checking model v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/model)
+    Checking domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/domain4)
+    Checking domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/domain5)
+    Checking domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/domain3)
+    Checking domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/domain6)
+    Checking domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/domain0)
+    Checking domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/domain1)
+    Checking domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/domain2)
+    Checking domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/domain7)
+    Checking app v0.1.0 (/home/dpc/lab/eros-bench/generated/eros-erased/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.23s

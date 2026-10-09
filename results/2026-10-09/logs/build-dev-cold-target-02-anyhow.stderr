@@ -1,0 +1,12 @@
+   Compiling anyhow v1.0.104
+   Compiling model v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/model)
+   Compiling domain3 v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/domain3)
+   Compiling domain7 v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/domain7)
+   Compiling domain1 v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/domain1)
+   Compiling domain0 v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/domain0)
+   Compiling domain2 v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/domain2)
+   Compiling domain5 v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/domain5)
+   Compiling domain4 v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/domain4)
+   Compiling domain6 v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/domain6)
+   Compiling app v0.1.0 (/home/dpc/lab/eros-bench/generated/anyhow/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.13s

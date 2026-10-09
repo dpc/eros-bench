@@ -1,0 +1,7 @@
+/generated/
+/targets/
+/scratch/
+/.direnv/
+/result
+__pycache__/
+*.pyc
